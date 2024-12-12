@@ -18,4 +18,4 @@ class TestInterface(unittest.TestCase):
         self.assertIsInstance(self.interface, Interface)
 
 # if _name_ == "_main_":
-unittest.main()
+#unittest.main()
