@@ -29,6 +29,6 @@ jobs:
     - name: Add Source to PYTHONPATH
       run: echo "PYTHONPATH=$(pwd)/Source:$PYTHONPATH" >> $GITHUB_ENV  # Ajoute Source au PYTHONPATH
 
-    - name: Run tests with pytest
+    - name: Run tests with unittest
       run: |
-        pytest --maxfail=1 --disable-warnings -q  # Exécute les tests avec pytest
+        python -m unittest discover Test  # Exécute les tests avec unittest
