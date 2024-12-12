@@ -10,4 +10,4 @@ class TestTraitsManager(unittest.TestCase):
         self.assertIn("Labrador Retriever", result)
 
 # if _name_ == "_main_":
-unittest.main()
+#unittest.main()
