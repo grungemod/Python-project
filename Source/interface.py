@@ -1,11 +1,12 @@
 import tkinter as tk
+import pytest
 from tkinter import messagebox
-from .traits import TraitsManager
+from Source.traits import TraitsManager
 
 class Interface:
     """Gère l'interface graphique."""
 
-    def _init_(self):
+    def __init__(self):  # Correction ici
         self.manager = TraitsManager()
 
     def soumettre(self, checkboxes):
@@ -28,6 +29,8 @@ class Interface:
         """
         Crée et lance l'interface graphique.
         """
+        print("TraitsManager:", self.manager)
+        print("Races:", self.manager.races)
         fenetre = tk.Tk()
         fenetre.title("Trouver la race de chien idéale")
 
